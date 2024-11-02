@@ -5,9 +5,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Mono;
 
-public class Lecture07MonoFromRunnable {
+public class Lec07MonoFromRunnable {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(Lecture07MonoFromRunnable.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(Lec07MonoFromRunnable.class);
 
     public static void main(String[] args) {
         getProductName(10)
