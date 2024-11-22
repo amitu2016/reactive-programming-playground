@@ -8,6 +8,7 @@ public class Lec05Subscribe {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(Lec05Subscribe.class);
 
+
     public static void main(String[] args) {
 
         Flux.range(1, 10)
