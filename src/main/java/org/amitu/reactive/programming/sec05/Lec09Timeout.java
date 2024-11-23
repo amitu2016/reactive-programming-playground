@@ -9,9 +9,12 @@ public class Lec09Timeout {
 
     public static void main(String[] args) {
 
-        getProductName()
+        var mono = getProductName()
                 .timeout(Duration.ofSeconds(1), fallback())
-                .onErrorReturn("fallback")
+                .onErrorReturn("fallback");
+
+        mono
+                .timeout(Duration.ofMillis(500))
                 .subscribe(Util.subscriber());
 
         Util.sleep(6);
